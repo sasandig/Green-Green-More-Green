@@ -1,0 +1,351 @@
+/* Author: Sasandi Galaboda
+Date: 31/03/2025
+Version: {"path":"/tauri/Users/sasandigalaboda/Downloads/ECU 2nd Year- 1st Sem/GDI12100.1-Web Design/Weekly workshop activities/Week 06/styles.css"}Week 06
+*/
+
+/*
+COLOURS
+#211d1c - dark brown (for text)
+#2f261d - brown
+#225c71 - dark teal
+#c62d03 - burnt red
+#EEE9D9 - beige
+#FFFFFF - white
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap");
+
+/* GLOBAL STYLES
+--------------------------------
+*/
+body {
+    font-size: 16px;
+    font-weight: 300;
+    font-family: "Open Sans", sans-serif;
+    color: #211d1c; /* dark brown */
+    margin: 0;
+}
+
+#wrapper {
+    position: relative;
+    max-width: 1200px;
+    width: 90%; 
+    margin: 0 auto;
+}
+h1 {
+    font-size: 3em;
+    font-weight: 700;
+}
+h2 {
+    font-size: 1.6em;
+    font-weight: 700;
+}
+/* Fixing link pseudo-classes */
+a:text {
+    color: #ffffff; /* White text color */
+}
+
+a:link {
+    color: #225c71; /* Dark teal for unvisited links */
+    text-decoration: none;
+    padding: 10px 20px 15px 20px;
+}
+
+a:visited {
+    color: #c62d03; /* Burnt red for visited links */
+}
+
+/* HEADER
+--------------------------------
+*/
+header {
+    background: #2f261d url(_images7/banner_1200.jpg) no-repeat 
+        top center/ cover; /* Sets the background color */
+    color: #ffffff; /* White text color */
+    height: 430px;
+}
+header h1 {
+    visibility: hidden;
+}
+header img {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    z-index: 10; /* Higher value brings it to the front */
+}
+
+/* NAVIGATION
+--------------------------------
+*/
+nav {
+    background-color: rgba(0, 0, 0, 0.65);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /*=1200px*/
+    padding-top: 45px;
+}
+nav ul {
+    padding-left: 200px;
+    list-style: none;
+}
+nav li {
+    display: inline;
+}
+nav a:visited {
+    color: #ffffff; /*white*/
+    text-decoration: none;
+    padding: 10px 20px 15px 20px;
+}
+nav a:hover {
+    background-color: #356d81; /*dark teal*/
+    text-decoration: none;
+    padding: 10px 20px 15px 20px;
+}
+nav span {
+    padding: 10px 20px 15px 20px;
+    background-color: #356d81; /*dark teal*/
+    color: #ffffff; /*white*/
+}
+
+/* CONTENT 1
+--------------------------------
+*/
+#three-columns {
+    display: flex; /* Enables flexbox layout */
+    margin: 30px 0;
+    text-align: center;
+}
+#three-colums section {
+    padding: 0 20px;
+}
+
+/* CONTENT  2
+--------------------------------
+*/
+#community {
+    background: #4389a2;
+    color: #ffffff; /*white*/
+    display: flex;
+    padding: 25px;
+}
+#community h2 {
+    margin: 0;
+}
+#community div {
+    padding-left: 25px;
+}
+#community a {
+    color: white; /* White text */
+    text-decoration: none; /* Removes underline */
+    font-size: 1.2em; /* Increases font size */
+}
+#community a {
+    display: inline-block; /* Makes it behave like a button */
+    color: white; /* Ensures text remains white */
+    background-color: #225c71; /* Button background */
+    padding: 10px 20px; /* Space around text */
+    border: 2px solid white; /* Adds a white border */
+    border-radius: 5px; /* Rounds corners */
+    font-size: 1.2em; /* Adjust font size */
+    transition: 0.3s ease-in-out; /* Smooth transition effect */
+}
+#community a:hover {
+    background-color: white; /* Changes background */
+    color: #225c71; /* Changes text color */
+    border-color: #225c71; /* Changes border color */
+}
+
+/* SIDEBAR
+--------------------------------
+*/
+aside {
+    display: flex;
+    background-color: #eee9d9;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+aside h2 {
+    font-size: 1.2em;
+    margin-top: 15px; /* Add space after image */
+}
+
+aside p {
+    margin: 12px 0 0 0; /* Top margin only, no bottom margin */
+    font-size: 0.95rem; /* Slightly smaller than base font */
+    line-height: 1.5; /* Comfortable line spacing */
+    color: #333; /* Dark gray text color */
+    text-align: left; /* Left-aligned text */
+    font-style: normal; /* Ensure no italics unless specified */
+    padding: 0; /* No additional padding */
+}
+
+aside img {
+    width: 70%;
+    height:auto;
+    display: block; /* Remove default image spacing */
+    max-width: 100%;
+}
+
+aside section {
+    padding: 22px;
+}
+
+/* SIDEBAR > BLOCKQUOTE
+--------------------------------
+*/
+blockquote {
+    background: #ffffff;
+    margin-bottom: 0;
+    align-self: flex-end;
+    padding: 30px 25px 25px 25px;
+}
+/* FOOTER
+------------------------------- */
+footer {
+    font-size: 0.8em; /* Reduced font size */
+    background-color: #ffffff; /* Optional: light background for contrast */
+    padding: 15px 0; /* Top-bottom padding */
+    text-align: center; /* Center align the text */
+}
+
+footer ul {
+    list-style: none; /* Remove bullet points */
+    display: flex; /* Enable Flexbox */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    justify-content: center; /* Center the items horizontally */
+    gap: 20px; /* Gap between list items */
+    padding: 0;
+    margin: 0;
+}
+
+footer li {
+    display: inline; /* Inline-block styling for list items */
+}
+
+/* MEDIA QUERIES
+------------------------------- */
+
+@media (max-width: 1000px){
+    #wrapper {
+        width: 100%;
+    }
+    #community h2{
+        margin: 0;
+    }
+        
+}
+
+@media (max-width: 800px){
+    header{
+        background: url(_images10/banner_800.png);
+        height: 290px;
+    }
+    header img{
+        width: 20%; height: auto;
+    }
+    nav { padding-top: 102px; }
+    
+    nav ul { padding-left: 23px; }
+    
+    
+    /* Content 1  */
+    #three-columns {
+        display: block;            /* Revert flex layout */
+        text-align: left;          /* Align text to the left */
+    }
+    #three-columns img{
+        float: left;
+        width: 75px;
+        margin: 0 30px 20px 20px;
+    }
+    #three-columns section {
+    margin-bottom: 35px; 
+}
+   /*Green Community  */
+    #community {
+    flex-wrap: wrap;
+    align-items: center;      /* Vertically center image and text */
+    gap: 10px;                /* Space between image and text */
+    margin: 0;
+}
+    #community img {
+    height: auto;
+    margin: 0 28px 0;
+}
+    /*footer  */
+    footer ul{
+        flex-wrap: wrap;
+    }
+    footer li{
+        padding-bottom: 10px;
+    }
+} 
+@media (max-width: 600px) {
+    /*Reduce font sizes */
+    h2 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 0.85em;
+    }
+
+    a {
+        font-size: 0.85em;
+    }
+    blockquote {
+        font-size: 0.9em;
+    }
+    /*Remove background image from header and revert to dark brown and header size reduced */
+    header {
+        background: #2f261d;
+        height: 200px; 
+    }
+    /* Remove opaque nav background */
+    nav {
+        background-color: transparent;
+        padding-top: 111px;
+    }
+    /* Fix logo width */
+    header img {
+        width: 200px;
+        height: auto;
+    }
+
+    /* Reduce nav link padding */
+    nav a:link,
+    nav a:visited,
+    nav a:hover {
+        padding: 10px 10px;
+        font-size: 0.85em;
+    }
+    nav span {
+        padding: 5px 10px;
+    }
+    /* Remove icons in content 1 */
+    #three-columns img {
+        display: none;
+    }
+    /* Remove top/bottom padding in content 1 sections */
+    #three-columns section {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    /* Remove float and wrap layout in content 2 (Green Community) */
+    #community {
+        display: block;
+    }
+    /* Remove top padding of text in content 2 */
+    #community div {
+        padding-left: 28px;
+        padding-top: 0;
+    }
+    /* Allow wrapping in aside */
+    aside {
+        flex-wrap: wrap;
+    }
+    /* Reduce top padding in blockquote */
+    blockquote {
+        padding-top: 10px;
+    }
+}
